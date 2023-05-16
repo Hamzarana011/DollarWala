@@ -26,7 +26,7 @@ function Contact() {
      </Form.Group>
 
      <Form.Group className="mb-3" controlId="formEmail">
-       <Form.Label>Email</Form.Label>
+       <Form.Label>Eemail</Form.Label>
        <Form.Control type="email" name="email" placeholder="Enter your email" required />
      </Form.Group>
 
