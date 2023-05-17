@@ -8,9 +8,10 @@ import { Routes, Route } from "react-router-dom";
 import SingleProduct from "./Components/SingleProduct";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
-
+import pay from "./Pages/pay";
 import Footer from "./Components/Footer";
 import Cart from "./Components/Cart";
+import ReviewOrder from "./Pages/ReviewOrder"
 const App = () => {
   return (
     <>
@@ -24,7 +25,8 @@ const App = () => {
         <Route exact path="/Cart" element={<Cart/>} />   
         <Route exact path="/Contact" element={<Contact/>} />
         <Route exact path="/About" element={<About/>}/>
-         
+        <Route exact path="/ReviewOrder" element={<ReviewOrder/>} />
+        <Route exact path="/pay" element={<pay/>} />
         
       </Routes>
       

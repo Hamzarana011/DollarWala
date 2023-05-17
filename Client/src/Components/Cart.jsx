@@ -2,43 +2,41 @@ import { useState } from 'react';
 import { Container, Table, Button } from 'react-bootstrap';
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([]);
-
-  const removeFromCart = (item) => {
-    const updatedCart = cartItems.filter((cartItem) => cartItem.id !== item.id);
-    setCartItems(updatedCart);
-  }
-
-  
-
   return (
-    <Container>
-      <h1>Shopping Cart</h1>
+    <Container className="my-5">
+      <h1 className="text-center mb-5">Your Cart</h1>
       <Table striped bordered hover>
         <thead>
           <tr>
             <th>Product</th>
-            <th>Price</th>
             <th>Quantity</th>
-            <th>Action</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
-          {cartItems.map((item) => (
-            <tr key={item.id}>
-              <td>{item.name}</td>
-              <td>{item.price}</td>
-              <td>{item.quantity}</td>
-              <td>
-                <Button variant="danger" onClick={() => removeFromCart(item)}>Remove</Button>
-              </td>
-            </tr>
-          ))}
+          <tr>
+            <td>Product 1</td>
+            <td>2</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Product 2</td>
+            <td>1</td>
+            <td>$20.00</td>
+          </tr>
+          <tr>
+            <td>Product 3</td>
+            <td>3</td>
+            <td>$5.00</td>
+          </tr>
         </tbody>
       </Table>
-      {cartItems.length === 0 && (
-        <p>Your cart is currently empty.</p>
-      )}
+      <div className="d-flex justify-content-between">
+        <Button variant="secondary">Edit Order</Button>
+       
+        <Button variant="primary">proceed to pay</Button>
+      
+      </div>
     </Container>
   );
 };
