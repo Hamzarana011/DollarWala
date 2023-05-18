@@ -12,6 +12,7 @@ import pay from "./Components/pay";
 import Footer from "./Components/Footer";
 import Cart from "./Components/Cart";
 import ReviewOrder from "./Pages/ReviewOrder";
+import Franchise from "./Pages/franchise";
 const App = () => {
   return (
     <>
@@ -27,6 +28,7 @@ const App = () => {
         <Route exact path="/About" element={<About/>}/>
         <Route exact path="/ReviewOrder" element={<ReviewOrder/>} />
         <Route exact path="/pay" element={<pay/>} />
+        <Route exact path="/Franchise" element={<Franchise/>}/>
         
       </Routes>
       
