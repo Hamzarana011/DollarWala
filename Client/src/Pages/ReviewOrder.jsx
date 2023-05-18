@@ -25,7 +25,7 @@ function ReviewOrder() {
             type="text"
             placeholder="Enter your productId"
             value={productId}
-            onChange={(event) => setproductId(event.target.value)}
+            onChange={(event) => set(event.target.value)}
             required
           />
         </Form.Group>

@@ -8,10 +8,10 @@ import { Routes, Route } from "react-router-dom";
 import SingleProduct from "./Components/SingleProduct";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
-import pay from "./Pages/pay";
+import pay from "./Components/pay";
 import Footer from "./Components/Footer";
 import Cart from "./Components/Cart";
-import ReviewOrder from "./Pages/ReviewOrder"
+import ReviewOrder from "./Pages/ReviewOrder";
 const App = () => {
   return (
     <>
